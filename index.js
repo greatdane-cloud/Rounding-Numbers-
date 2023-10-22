@@ -2,6 +2,9 @@
 // Round the price in the button down to two decimal places.
 // Don't know which method to use? Google it!
 
-const totalPrice = 420.69235632455
+const totalPrice = 420.69235632455 
 const btn = document.getElementById("purchase-btn")
-btn.textContent = `Buy €${ totalPrice }`
+btn.textContent = `Buy €${ Number(totalPrice).toFixed(2) }`
+console.log(totalPrice)
+
+
